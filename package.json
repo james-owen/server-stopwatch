@@ -26,6 +26,7 @@
     "webpack-cli": "^2.1.5"
   },
   "dependencies": {
+    "d3": "^5.7.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

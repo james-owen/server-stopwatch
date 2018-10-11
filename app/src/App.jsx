@@ -4,6 +4,7 @@ import Url from './components/Url';
 import Logo from './components/Logo/';
 import Link from './components/Link/';
 import { setPriority } from 'os';
+import Explorer from '../../backend_explore'
 
 import Dashboard from './components/containers/dashboard';
 
@@ -18,7 +19,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Url />
+        <Explorer />
         {/* <Dashboard /> */}
       </div>
     );

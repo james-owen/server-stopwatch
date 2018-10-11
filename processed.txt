@@ -1,0 +1,266 @@
+Statistical profiling result from isolate-0x104800c00-v8.log, (151 ticks, 2 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+      3    2.0%          /usr/lib/system/libsystem_pthread.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      1    0.7%    0.7%  LazyCompile: ~onwrite _stream_writable.js:445:17
+      1    0.7%    0.7%  LazyCompile: ~_unrefTimer net.js:326:52
+
+ [C++]:
+   ticks  total  nonlib   name
+     36   23.8%   24.3%  T node::contextify::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    9.9%   10.1%  T _kpersona_get
+     14    9.3%    9.5%  T ___guarded_open_dprotected_np
+      3    2.0%    2.0%  t node::GetBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    1.3%    1.4%  t v8::internal::ParserBase<v8::internal::Parser>::ParseAndClassifyIdentifier(bool*)
+      2    1.3%    1.4%  t node::cares_wrap::(anonymous namespace)::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    1.3%    1.4%  T v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterTransfer(v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*, v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*)
+      2    1.3%    1.4%  T v8::internal::Factory::InitializeMap(v8::internal::Map*, v8::internal::InstanceType, int, v8::internal::ElementsKind, int)
+      2    1.3%    1.4%  T v8::internal::ExistingCodeLogger::LogCompiledFunctions()
+      2    1.3%    1.4%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  t void std::__1::vector<int, std::__1::allocator<int> >::__push_back_slow_path<int const&>(int const&&&)
+      1    0.7%    0.7%  t v8::internal::interpreter::BytecodeGenerator::VisitNoStackOverflowCheck(v8::internal::AstNode*)
+      1    0.7%    0.7%  t v8::internal::Scavenger::ScavengeObject(v8::internal::HeapObjectReference**, v8::internal::HeapObject*)
+      1    0.7%    0.7%  t v8::internal::ParserBase<v8::internal::Parser>::ParseIfStatement(v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.7%    0.7%  t v8::internal::ParserBase<v8::internal::Parser>::ParseExpressionOrLabelledStatement(v8::internal::ZoneList<v8::internal::AstRawString const*>*, v8::internal::AllowLabelledFunctionStatement, bool*)
+      1    0.7%    0.7%  t std::__1::locale::__imp::__imp(std::__1::locale::__imp const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int)
+      1    0.7%    0.7%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      1    0.7%    0.7%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  t node::(anonymous namespace)::Parser::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  t __os_unfair_lock_lock_slow
+      1    0.7%    0.7%  t ___inaddr_to_index
+      1    0.7%    0.7%  T void node::StreamBase::JSMethod<node::LibuvStreamWrap, &(int node::StreamBase::WriteString<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  T v8::internal::interpreter::Register::is_current_context() const
+      1    0.7%    0.7%  T v8::internal::interpreter::Interpreter::LookupNameOfBytecodeHandler(v8::internal::Code*)
+      1    0.7%    0.7%  T v8::internal::interpreter::ConstantArrayBuilder::Insert(v8::internal::AstRawString const*)
+      1    0.7%    0.7%  T v8::internal::interpreter::ConstantArrayBuilder::ConstantArrayBuilder(v8::internal::Zone*)
+      1    0.7%    0.7%  T v8::internal::interpreter::BytecodeGenerator::GenerateBytecode(unsigned long)
+      1    0.7%    0.7%  T v8::internal::interpreter::BytecodeGenerator::BuildTest(v8::internal::interpreter::BytecodeArrayBuilder::ToBooleanMode, v8::internal::interpreter::BytecodeLabels*, v8::internal::interpreter::BytecodeLabels*, v8::internal::interpreter::BytecodeGenerator::TestFallthrough)
+      1    0.7%    0.7%  T v8::internal::interpreter::BytecodeArrayWriter::EmitBytecode(v8::internal::interpreter::BytecodeNode const*)
+      1    0.7%    0.7%  T v8::internal::interpreter::BytecodeArrayBuilder::PopContext(v8::internal::interpreter::Register)
+      1    0.7%    0.7%  T v8::internal::compiler::InstructionSequence::InstructionBlocksFor(v8::internal::Zone*, v8::internal::compiler::Schedule const*)
+      1    0.7%    0.7%  T v8::internal::compiler::InstructionSelector::CanCover(v8::internal::compiler::Node*, v8::internal::compiler::Node*) const
+      1    0.7%    0.7%  T v8::internal::Zone::New(unsigned long)
+      1    0.7%    0.7%  T v8::internal::StubFrame::GetCallerStackPointer() const
+      1    0.7%    0.7%  T v8::internal::StringTable::LookupKey(v8::internal::Isolate*, v8::internal::StringTableKey*)
+      1    0.7%    0.7%  T v8::internal::String::IsOneByteEqualTo(v8::internal::Vector<unsigned char const>)
+      1    0.7%    0.7%  T v8::internal::Scope::Snapshot::Snapshot(v8::internal::Scope*)
+      1    0.7%    0.7%  T v8::internal::Scope::RemoveUnresolved(v8::internal::VariableProxy*)
+      1    0.7%    0.7%  T v8::internal::Scope::LookupInScopeInfo(v8::internal::AstRawString const*)
+      1    0.7%    0.7%  T v8::internal::Scavenger::Process(v8::internal::OneshotBarrier*)
+      1    0.7%    0.7%  T v8::internal::Scanner::ScanString()
+      1    0.7%    0.7%  T v8::internal::Scanner::Scan()
+      1    0.7%    0.7%  T v8::internal::Scanner::Next()
+      1    0.7%    0.7%  T v8::internal::Runtime_CreateArrayLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.7%  T v8::internal::Parser::ParseFunctionLiteral(v8::internal::AstRawString const*, v8::internal::Scanner::Location, v8::internal::FunctionNameValidity, v8::internal::FunctionKind, int, v8::internal::FunctionLiteral::FunctionType, v8::internal::LanguageMode, v8::internal::ZoneList<v8::internal::AstRawString const*>*, bool*)
+      1    0.7%    0.7%  T v8::internal::Map::UpdateFieldType(int, v8::internal::Handle<v8::internal::Name>, v8::internal::PropertyConstness, v8::internal::Representation, v8::internal::Handle<v8::internal::Object>)
+      1    0.7%    0.7%  T v8::internal::Map::CopyDropDescriptors(v8::internal::Handle<v8::internal::Map>)
+      1    0.7%    0.7%  T v8::internal::Logger::NewEvent(char const*, void*, unsigned long)
+      1    0.7%    0.7%  T v8::internal::Logger::ApiNamedPropertyAccess(char const*, v8::internal::JSObject*, v8::internal::Object*)
+      1    0.7%    0.7%  T v8::internal::Log::MessageBuilder& v8::internal::Log::MessageBuilder::operator<<<char const*>(char const*)
+      1    0.7%    0.7%  T v8::internal::Factory::NewNoClosuresCell(v8::internal::Handle<v8::internal::HeapObject>)
+      1    0.7%    0.7%  T v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::Heap::RootListIndex, int, v8::internal::Object*, v8::internal::PretenureFlag)
+      1    0.7%    0.7%  T v8::internal::Factory::NewCodeForDeserialization(unsigned int)
+      1    0.7%    0.7%  T v8::internal::Deserializer<v8::internal::DefaultDeserializerAllocator>::ReadData(v8::internal::MaybeObject**, v8::internal::MaybeObject**, int, unsigned long)
+      1    0.7%    0.7%  T v8::internal::Builtins::name(int)
+      1    0.7%    0.7%  T v8::internal::Builtin_DatePrototypeToUTCString(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.7%    0.7%  T v8::internal::BuiltinDeserializer::DeserializeBuiltinRaw(int)
+      1    0.7%    0.7%  T v8::internal::AstValueFactory::GetOneByteStringInternal(v8::internal::Vector<unsigned char const>)
+      1    0.7%    0.7%  T v8::internal::Accessors::ReconfigureToDataProperty(v8::Local<v8::Name>, v8::Local<v8::Value>, v8::PropertyCallbackInfo<v8::Boolean> const&)
+      1    0.7%    0.7%  T v8::internal::Accessors::FunctionPrototypeGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  T std::__1::num_get<wchar_t, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> > >::do_get(std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::istreambuf_iterator<wchar_t, std::__1::char_traits<wchar_t> >, std::__1::ios_base&, unsigned int&, void*&) const
+      1    0.7%    0.7%  T std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >::getline(wchar_t*, long)
+      1    0.7%    0.7%  T std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >::get(std::__1::basic_streambuf<wchar_t, std::__1::char_traits<wchar_t> >&, wchar_t)
+      1    0.7%    0.7%  T node::contextify::ContextifyScript::RunInThisContext(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  T node::TCPWrap::Connect(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  T node::DTRACE_NET_SERVER_CONNECTION(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.7%    0.7%  T _res_getTableItemByKey_62
+      1    0.7%    0.7%  T _res_getString_62
+      1    0.7%    0.7%  T _os_unfair_lock_unlock_no_tsd_4libpthread
+      1    0.7%    0.7%  T _mach_msg_server_once
+      1    0.7%    0.7%  T _http_parser_execute
+      1    0.7%    0.7%  T _host_create_mach_voucher
+      1    0.7%    0.7%  T __swrite
+      1    0.7%    0.7%  T ___fflush
+
+ [Summary]:
+   ticks  total  nonlib   name
+      2    1.3%    1.4%  JavaScript
+    144   95.4%   97.3%  C++
+      3    2.0%    2.0%  GC
+      3    2.0%          Shared libraries
+      2    1.3%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     49   46.7%   32.5%  T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     26   24.8%   17.2%  T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    4.8%    3.3%  T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      5    4.8%    3.3%  T v8::internal::Runtime_DeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    2.9%    2.0%  T v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    2.9%    2.0%  T v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    2.9%    2.0%  T icu_62::TimeZone::detectHostTimeZone()
+      2    1.9%    1.3%  T v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Runtime_NumberToStringSkipCache(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Runtime_NewClosure(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Runtime_LoadPropertyWithInterceptor(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Runtime_CreateObjectLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Runtime_CreateArrayLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Builtin_ObjectSetPrototypeOf(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Builtin_FunctionPrototypeBind(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.0%    0.7%  T v8::internal::Builtin_DatePrototypeToUTCString(int, v8::internal::Object**, v8::internal::Isolate*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+     36   23.8%  T node::contextify::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     36  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    8.3%      Script: ~<anonymous> _http_client.js:1:11
+      3  100.0%        Script: ~<anonymous> http.js:1:11
+      3  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:502:24
+      3  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:629:36
+      2    5.6%      Script: ~<anonymous> tty.js:1:11
+      2  100.0%        LazyCompile: ~createWritableStdioStream internal/process/stdio.js:164:35
+      2  100.0%          LazyCompile: ~getStdout internal/process/stdio.js:18:21
+      2  100.0%            Script: ~<anonymous> console.js:1:11
+      2    5.6%      Script: ~<anonymous> stream.js:1:11
+      2  100.0%        Script: ~<anonymous> internal/fs/streams.js:1:11
+      2  100.0%          Script: ~<anonymous> fs.js:1:11
+      2  100.0%            Script: ~<anonymous> assert.js:1:11
+      2    5.6%      Script: ~<anonymous> internal/process/main_thread_only.js:1:11
+      2    5.6%      Script: ~<anonymous> internal/fs/streams.js:1:11
+      2  100.0%        Script: ~<anonymous> fs.js:1:11
+      2  100.0%          Script: ~<anonymous> assert.js:1:11
+      2  100.0%            Script: ~<anonymous> internal/process/main_thread_only.js:1:11
+      2    5.6%      Script: ~<anonymous> internal/cluster/master.js:1:11
+      2  100.0%        Script: ~<anonymous> cluster.js:1:11
+      2  100.0%          LazyCompile: ~listenInCluster net.js:1324:25
+      2  100.0%            LazyCompile: ~Server.listen net.js:1366:35
+      2    5.6%      Script: ~<anonymous> http.js:1:11
+      2  100.0%        LazyCompile: ~Module._load internal/modules/cjs/loader.js:502:24
+      2  100.0%          LazyCompile: ~Module.require internal/modules/cjs/loader.js:629:36
+      2  100.0%            LazyCompile: ~require internal/modules/cjs/helpers.js:17:19
+      2    5.6%      Script: ~<anonymous> fs.js:1:11
+      2  100.0%        Script: ~<anonymous> assert.js:1:11
+      2  100.0%          Script: ~<anonymous> internal/process/main_thread_only.js:1:11
+      2    5.6%      Script: ~<anonymous> assert.js:1:11
+      2  100.0%        Script: ~<anonymous> internal/process/main_thread_only.js:1:11
+      2    5.6%      LazyCompile: ~Module._load internal/modules/cjs/loader.js:502:24
+      2  100.0%        LazyCompile: ~Module.require internal/modules/cjs/loader.js:629:36
+      2  100.0%          LazyCompile: ~require internal/modules/cjs/helpers.js:17:19
+      2  100.0%            Script: ~<anonymous> /Users/jamesowen/coding/server-stopwatch/server.js:1:11
+      1    2.8%      Script: ~<anonymous> internal/modules/cjs/loader.js:1:11
+      1  100.0%        LazyCompile: ~setupGlobalConsole internal/bootstrap/node.js:395:30
+      1    2.8%      Script: ~<anonymous> cluster.js:1:11
+      1  100.0%        LazyCompile: ~listenInCluster net.js:1324:25
+      1  100.0%          LazyCompile: ~Server.listen net.js:1366:35
+      1  100.0%            Script: ~<anonymous> /Users/jamesowen/coding/server-stopwatch/server.js:1:11
+      1    2.8%      Script: ~<anonymous> child_process.js:1:11
+      1  100.0%        Script: ~<anonymous> internal/cluster/master.js:1:11
+      1  100.0%          Script: ~<anonymous> cluster.js:1:11
+      1  100.0%            LazyCompile: ~listenInCluster net.js:1324:25
+      1    2.8%      Script: ~<anonymous> buffer.js:1:11
+      1    2.8%      Script: ~<anonymous> _stream_readable.js:1:11
+      1  100.0%        Script: ~<anonymous> stream.js:1:11
+      1  100.0%          Script: ~<anonymous> internal/fs/streams.js:1:11
+      1  100.0%            Script: ~<anonymous> fs.js:1:11
+      1    2.8%      LazyCompile: ~setupNextTick internal/process/next_tick.js:5:23
+      1    2.8%      LazyCompile: ~setupGlobalTimeouts internal/bootstrap/node.js:385:31
+      1    2.8%      LazyCompile: ~setupGlobalConsole internal/bootstrap/node.js:395:30
+      1    2.8%      LazyCompile: ~lookupAndConnect net.js:946:26
+      1  100.0%        LazyCompile: ~Socket.connect net.js:890:36
+      1  100.0%          LazyCompile: ~entries.getEntries.forEach.entry /Users/jamesowen/coding/server-stopwatch/server.js:19:32
+      1  100.0%            Builtin: ArrayForEach
+      1    2.8%      LazyCompile: ~Script vm.js:43:14
+      1  100.0%        LazyCompile: ~createScript vm.js:250:22
+      1  100.0%          LazyCompile: ~runInThisContext vm.js:299:26
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:650:37
+
+     15    9.9%  T _kpersona_get
+
+     14    9.3%  T ___guarded_open_dprotected_np
+      3   21.4%    T v8::internal::Runtime_InterpreterDeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      3   21.4%    T v8::internal::Runtime_DeserializeLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   33.3%      LazyCompile: ~spliceOne internal/util.js:321:19
+      1  100.0%        LazyCompile: ~removeListener events.js:306:28
+      1  100.0%          LazyCompile: ~Readable.removeListener _stream_readable.js:828:45
+      1  100.0%            LazyCompile: ~detachSocket _http_server.js:182:62
+      2   14.3%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   50.0%      LazyCompile: ~listOnTimeout timers.js:215:23
+      1  100.0%        LazyCompile: ~processTimers timers.js:209:23
+      1   50.0%      LazyCompile: ~Readable.on _stream_readable.js:798:33
+      1  100.0%        LazyCompile: ~connectionListenerInternal _http_server.js:324:36
+      1  100.0%          LazyCompile: ~defaultTriggerAsyncIdScope internal/async_hooks.js:284:36
+      1  100.0%            LazyCompile: ~connectionListener _http_server.js:318:28
+
+      3    2.0%  t node::GetBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      3  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   33.3%      Script: ~<anonymous> internal/util.js:1:11
+      1   33.3%      Script: ~<anonymous> internal/dgram.js:1:11
+      1  100.0%        Script: ~<anonymous> dgram.js:1:11
+      1  100.0%          Script: ~<anonymous> internal/child_process.js:1:11
+      1  100.0%            Script: ~<anonymous> child_process.js:1:11
+      1   33.3%      Script: ~<anonymous> dns.js:1:11
+      1  100.0%        LazyCompile: ~lookupAndConnect net.js:946:26
+      1  100.0%          LazyCompile: ~Socket.connect net.js:890:36
+      1  100.0%            LazyCompile: ~entries.getEntries.forEach.entry /Users/jamesowen/coding/server-stopwatch/server.js:19:32
+
+      3    2.0%  /usr/lib/system/libsystem_pthread.dylib
+      2   66.7%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   50.0%      LazyCompile: ~onceWrapper events.js:269:21
+      1  100.0%        LazyCompile: ~emit events.js:140:44
+      1  100.0%          LazyCompile: ~emitListeningNT net.js:1317:25
+      1  100.0%            LazyCompile: ~_tickCallback internal/process/next_tick.js:41:25
+      1   50.0%      LazyCompile: ~normalizeArgs net.js:168:23
+      1  100.0%        LazyCompile: ~Server.listen net.js:1366:35
+      1  100.0%          Script: ~<anonymous> /Users/jamesowen/coding/server-stopwatch/server.js:1:11
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:650:37
+
+      2    1.3%  t v8::internal::ParserBase<v8::internal::Parser>::ParseAndClassifyIdentifier(bool*)
+      1   50.0%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      Script: ~<anonymous> console.js:1:11
+      1  100.0%        LazyCompile: ~setupGlobalConsole internal/bootstrap/node.js:395:30
+
+      2    1.3%  t node::cares_wrap::(anonymous namespace)::ChannelWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      2  100.0%      LazyCompile: ~Resolver internal/dns/utils.js:21:14
+      2  100.0%        Script: ~<anonymous> internal/dns/utils.js:1:11
+      2  100.0%          Script: ~<anonymous> dns.js:1:11
+      2  100.0%            LazyCompile: ~lookupAndConnect net.js:946:26
+
+      2    1.3%  UNKNOWN
+
+      2    1.3%  T v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterTransfer(v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*, v8::internal::interpreter::BytecodeRegisterOptimizer::RegisterInfo*)
+      2  100.0%    T v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   50.0%      LazyCompile: ~doNotify perf_hooks.js:453:18
+      1  100.0%        LazyCompile: ~observersCallback perf_hooks.js:461:27
+      1  100.0%          T node::performance::Measure(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%            LazyCompile: ~measure perf_hooks.js:380:10
+      1   50.0%      LazyCompile: ~_addListener events.js:193:22
+      1  100.0%        LazyCompile: ~addListener events.js:258:58
+      1  100.0%          LazyCompile: ~setupSignalHandlers internal/process/main_thread_only.js:68:29
+
+      2    1.3%  T v8::internal::Factory::InitializeMap(v8::internal::Map*, v8::internal::InstanceType, int, v8::internal::ElementsKind, int)
+      1   50.0%    T v8::internal::Builtin_ObjectSetPrototypeOf(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~deprecate internal/util.js:43:19
+      1  100.0%        Script: ~<anonymous> timers.js:1:11
+      1  100.0%          LazyCompile: ~setupGlobalTimeouts internal/bootstrap/node.js:385:31
+
+      2    1.3%  T v8::internal::ExistingCodeLogger::LogCompiledFunctions()
+
+      2    1.3%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%    T v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      2  100.0%      LazyCompile: ~WriteStream tty.js:70:21
+      2  100.0%        LazyCompile: ~createWritableStdioStream internal/process/stdio.js:164:35
+      1   50.0%          LazyCompile: ~getStdout internal/process/stdio.js:18:21
+      1  100.0%            Script: ~<anonymous> console.js:1:11
+      1   50.0%          LazyCompile: ~getStderr internal/process/stdio.js:33:21
+      1  100.0%            Script: ~<anonymous> console.js:1:11
+
