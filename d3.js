@@ -27,14 +27,14 @@ const data = [
   { "route": "/registered", "startTime": 113759509.926442, "duration": 1.14386 },
   { "route": "/registered", "startTime": 113759509.926442, "duration": 1.14386 }
 ]
+console.log("Parsed date", new Date(performance.now() + performance.timeOrigin));
+// console.log("Date: ", Date.now());
+// console.log("Perf: ", performance.now());
+// console.log("perf origin: ", performance.timeOrigin);
 
-console.log("Date: ", Date.now());
-console.log("Perf: ", performance.now());
-console.log("perf origin: ", performance.timeOrigin);
-
-console.log("Process: ", process.hrtime());
-console.log("Perf.now + perf.timeOrigin?", data[0].startTime);
-console.log("performance.now + origin", performance.now() + performance.timeOrigin);
+// console.log("Process: ", process.hrtime());
+// console.log("Perf.now + perf.timeOrigin?", data[0].startTime);
+// console.log("performance.now + origin", performance.now() + performance.timeOrigin);
 
 // start graph at performance.now();
 
